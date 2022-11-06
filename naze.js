@@ -244,7 +244,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
           }})
         }
 
-  if (m.text.includes('')) {
+  if (m.text.includes('😌')) {
     naze.sendMessage(m.chat, {
           react: {
             text: '😌',

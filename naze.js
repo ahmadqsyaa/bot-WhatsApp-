@@ -196,6 +196,9 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
         if (!naze.public) {
             if (!m.key.fromMe) return
         }
+if (m.message) {
+            naze.readMessages([m.key])
+        }
       
         
         if (m.text.includes('🗿')) {
